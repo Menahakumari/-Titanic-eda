@@ -1,4 +1,4 @@
-# -Titanic-eda
+# Titanic-eda
 
 # Titanic Data Analysis & Visualization
 
@@ -69,7 +69,7 @@ titanic-analysis/
 
 ##  Dataset Source
 
-[Titanic Dataset – Kaggle](https://www.kaggle.com/competitions/titanic/data)
+[Titanic Dataset – Kaggle](– https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 
 ---
 
