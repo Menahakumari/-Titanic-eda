@@ -1,12 +1,11 @@
 # Titanic-eda
-
-# Titanic Data Analysis & Visualization
+# 🚢 Titanic Data Analysis & Visualization
 
 This project focuses on understanding the Titanic dataset using descriptive statistics and visualizations. The goal is to extract patterns, detect anomalies, and draw inferences from the data to support survival prediction in future modeling tasks.
 
 ---
 
-## Objectives
+## 📌 Objectives
 
 - Generate summary statistics (mean, median, std, etc.)
 - Create histograms and boxplots for numeric features
@@ -16,7 +15,7 @@ This project focuses on understanding the Titanic dataset using descriptive stat
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 titanic-analysis/
@@ -36,20 +35,20 @@ titanic-analysis/
 
 ---
 
-##  Analysis Overview
+## 📊 Analysis Overview
 
-### Summary Statistics
+### 🔹 Summary Statistics
 - Used `df.describe()` to understand distribution of numeric values
 - Checked for missing values and filled where necessary
 
-### Visualizations
+### 🔹 Visualizations
 - **Histograms** to inspect distributions (Age, Fare, SibSp, Parch)
 - **Boxplots** to detect outliers
 - **Correlation Matrix** to understand numerical relationships
 - **Pairplot** to visualize multiple features against survival
 - **Bar plots** to explore trends in categorical features like Sex, Pclass, Embarked
 
-### Trend & Pattern Discovery
+### 🔹 Trend & Pattern Discovery
 - Survival rate varies by age group, fare paid, and class
 - Higher fare and 1st class passengers had better chances of survival
 - Children and young adults had higher survival rates
@@ -57,7 +56,7 @@ titanic-analysis/
 
 ---
 
-##  Key Inferences
+## ✅ Key Inferences
 
 - **Sex**: Females were more likely to survive than males
 - **Pclass**: Passengers in 1st class survived more often than those in 2nd or 3rd
@@ -67,12 +66,12 @@ titanic-analysis/
 
 ---
 
-##  Dataset Source
+## 🔗 Dataset Source
 
-[Titanic Dataset – Kaggle](– https://www.kaggle.com/datasets/yasserh/titanic-dataset)
+[Titanic Dataset – Kaggle]((https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 
 ---
 
-## Contact
+## 📬 Contact
 
 Feel free to connect or contribute to the project.
