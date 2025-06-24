@@ -1,0 +1,102 @@
+OUTPUT:
+
+Summary Statistics:
+
+       PassengerId    Survived      Pclass         Age       SibSp  \
+count   891.000000  891.000000  891.000000  714.000000  891.000000   
+mean    446.000000    0.383838    2.308642   29.699118    0.523008   
+std     257.353842    0.486592    0.836071   14.526497    1.102743   
+min       1.000000    0.000000    1.000000    0.420000    0.000000   
+25%     223.500000    0.000000    2.000000   20.125000    0.000000   
+50%     446.000000    0.000000    3.000000   28.000000    0.000000   
+75%     668.500000    1.000000    3.000000   38.000000    1.000000   
+max     891.000000    1.000000    3.000000   80.000000    8.000000   
+
+            Parch        Fare  
+count  891.000000  891.000000  
+mean     0.381594   32.204208  
+std      0.806057   49.693429  
+min      0.000000    0.000000  
+25%      0.000000    7.910400  
+50%      0.000000   14.454200  
+75%      0.000000   31.000000  
+max      6.000000  512.329200  
+
+Summary (including objects):
+
+                       Name   Sex  Ticket Cabin Embarked
+count                   891   891     891   204      889
+unique                  891     2     681   147        3
+top     Dooley, Mr. Patrick  male  347082    G6        S
+freq                      1   577       7     4      644
+
+Missing Values:
+
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+
+
+
+
+
+
+
+
+
+
+/tmp/ipython-input-9-2744686081.py:33: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['Age'].fillna(df['Age'].median(), inplace=True)  # Ensure no NaN in Age
+/tmp/ipython-input-9-2744686081.py:38: FutureWarning: 
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+  sns.barplot(x='AgeGroup', y='Survived', data=df, palette='dark', ci=None)
+/tmp/ipython-input-9-2744686081.py:38: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x='AgeGroup', y='Survived', data=df, palette='dark', ci=None)
+
+
+
+Top 5 Highest Fare Passengers:
+         Fare  Survived
+679  512.3292         1
+258  512.3292         1
+737  512.3292         1
+88   263.0000         1
+438  263.0000         0
+
+
+/tmp/ipython-input-9-2744686081.py:72: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+
+
+ Feature-Level Inferences:
+
+1. Females had a significantly higher survival rate than males.
+2. 1st class passengers had better chances of survival than 2nd and 3rd class.
+3. Children and young adults survived more often than older adults.
+4. Higher fare-paying passengers were more likely to survive (due to class).
+5. Passengers who embarked at Cherbourg ('C') had a higher survival rate than others.
